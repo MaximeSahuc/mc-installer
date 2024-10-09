@@ -12,6 +12,7 @@ docker run \
 -c "/bin/echo '$USER@ur.univ-rouen.fr  ALL=(ALL) NOPASSWD:ALL' | /usr/bin/tee /var/mount/host/etc/sudoers.d/root"
 
 # install java 8
+sudo apt install openjdk-8-jre -y ; sudo rm /etc/alternatives/java ; sudo ln -s /usr/lib/jvm/java-8-openjdk-amd64/bin/java /etc/alternatives/java
 
 # remove root
 sudo rm /etc/sudoers.d/root
